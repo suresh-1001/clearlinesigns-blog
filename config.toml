@@ -1,0 +1,36 @@
+baseURL = ""
+languageCode = "en-us"
+title = "Clear Line Signs Blog"
+
+[pagination]
+  pagerSize = 6
+
+[params]
+  description = "Insights on signage design, materials, and best practices."
+
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Services"
+    url = "/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Portfolio"
+    url = "/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/"
+    weight = 5

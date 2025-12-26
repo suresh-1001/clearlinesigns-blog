@@ -1,0 +1,192 @@
+
+
+:root {
+    --brand-blue: #1F5A65;
+    --card-bg: #EFF3F4;
+    --text-dark: #111;
+}
+
+.site-layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-main {
+    flex: 1;
+}
+/* Base */
+body {
+    margin: 0;
+    font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #fff;
+    color: #111;
+    height: 100%;
+    font-weight: 400;
+}
+
+/* ===== Header (Carrd-matched) ===== */
+
+.site-header {
+    background: #fff;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 26px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+    height: 60px;
+    display: block;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav a {
+    margin-left: 32px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    line-height: 1;
+}
+
+
+/* Hero */
+.hero {
+    background: var(--brand-blue);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+}
+
+.hero p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+
+.blog-card {
+    background: var(--card-bg);
+    padding: 28px;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-4px);
+}
+
+.blog-card h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* ===== Dark Footer (Main Site Match) ===== */
+
+.site-footer-dark {
+    background: #0F0F0F  ; /* brand blue */
+    margin-top: 80px;
+}
+
+.footer-dark-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px 24px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #b5b5b5;
+    letter-spacing: 0.01em;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .footer-dark-inner {
+        font-size: 13px;
+        padding: 24px 20px;
+    }
+}
+
+/* =====================================================
+   RESPONSIVE FIXES 
+   ===================================================== */
+
+
+/* 2️⃣ Reduce logo size on mobile */
+@media (max-width: 768px) {
+    .logo img {
+        height: 42px;
+    }
+}
+
+/* 3️⃣ Reduce hero spacing on mobile */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+
+/* ===== Mobile Header (Carrd-style stacked nav) ===== */
+
+@media (max-width: 768px) {
+
+    .header-inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 20px;
+    }
+
+    .logo img {
+        height: 42px;
+    }
+
+    .nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav a {
+        margin: 0 12px;
+        font-size: 15px;
+        line-height: 1.4;
+    }
+}

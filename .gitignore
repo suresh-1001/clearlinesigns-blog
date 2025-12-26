@@ -1,8 +1,12 @@
-_vendor
-node_modules
-public
-resources
-.DS_store
-# Local Netlify folder
-.netlify
-jsconfig.json
+# Hugo build output
+/public/
+
+# Hugo build lock
+.hugo_build.lock
+
+# Hugo pipes cache
+/resources/
+
+# OS junk
+.DS_Store
+Thumbs.db

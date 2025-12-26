@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<!-- HERO -->
+<section class="hero text-center text-white">
+    <div class="container">
+        <h1 class="display-5 fw-bold">Blog</h1>
+        <p class="lead mt-3">
+            Our blog shares insights on signage design, materials, best practices,
+            and industry updates to help businesses make informed decisions.
+        </p>
+    </div>
+</section>
+
+<!-- BLOG GRID -->
+<section class="container my-5">
+    <div class="row g-4">
+        {{ range .Paginator.Pages }}
+        <div class="col-md-4">
+            <a href="{{ .RelPermalink }}" class="text-decoration-none text-dark">
+                <div class="blog-card h-100">
+                    <h5 class="fw-semibold">{{ .Title }}</h5>
+                    <p class="mt-3">{{ .Summary }}</p>
+                </div>
+            </a>
+        </div>
+        {{ end }}
+    </div>
+</section>
+
+{{ end }}
