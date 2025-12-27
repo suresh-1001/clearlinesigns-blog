@@ -34,3 +34,6 @@ title = "Clear Line Signs Blog"
     name = "Contact"
     url = "/"
     weight = 5
+    
+[minify]
+  minifyOutput = true
